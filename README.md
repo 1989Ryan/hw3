@@ -1,7 +1,8 @@
-# 数字图像处理作业 图像的直方图增强
+# <p align="center">数字图像处理作业 图像的直方图增强</p>
+
 自动化钱61班　赵子瑞　2160405068
 
-## 作业说明
+## <p align="center">作业说明</p>
 本次作业结构为
 
 ```
@@ -19,12 +20,12 @@ README.md
 code.txt
 ```
 
-## Prerequisite
+## <p align="center">Prerequisite</p>
 
 opencv-python
 
 numpy
 
-## Run
+## <p align="center">Run</p>
 
 Please run the command `python histogram.py` in the folder `CV_python_toolbox/scripts/`. The images will be saved in the folder `images` automatically.

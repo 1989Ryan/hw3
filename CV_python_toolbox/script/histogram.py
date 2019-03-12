@@ -9,11 +9,11 @@ from src.basic_cv_tool import *
 assignments.
 '''
 def equalized_histogram(imagename):
-    image_name1 = "../../homework3/project3/"+imagename+".bmp"
-    image_cdf1 = "../../homework3/project3/"+imagename+"_cdf.png"
-    result_name1 = "../../homework3/result_"+imagename+".bmp"
-    result_cdf1 = "../../homework3/result_"+imagename+"_cdf.png"
-    result_hist = "../../homework3/result_"+imagename+"_hist.png"
+    image_name1 = "../../images/project3/"+imagename+".bmp"
+    image_cdf1 = "../../images/project3/"+imagename+"_cdf.png"
+    result_name1 = "../../images/result_"+imagename+".bmp"
+    result_cdf1 = "../../images/result_"+imagename+"_cdf.png"
+    result_hist = "../../images/result_"+imagename+"_hist.png"
     tool = basic_cv_tool(image_name1)
     img = tool.ImageRead(image_name1)
     cdf = tool.calcdf(img)
@@ -37,9 +37,9 @@ def equalized_histogram(imagename):
     plt.close()
 
 def histogram_specialization(imagename, cdf):
-    image_name = "../../homework3/project3/"+imagename+".bmp"
-    result_name = "../../homework3/mat_result_"+imagename+".bmp"
-    result_hist = "../../homework3/mat_result_"+imagename+"_hist.png"
+    image_name = "../../images/project3/"+imagename+".bmp"
+    result_name = "../../images/mat_result_"+imagename+".bmp"
+    result_hist = "../../images/mat_result_"+imagename+"_hist.png"
     tool = basic_cv_tool(image_name)
     img = tool.ImageRead(image_name)
     equ = cv2.equalizeHist(img)
@@ -74,9 +74,9 @@ def histogram_specialization(imagename, cdf):
     '''
 
 def local_histogram(imagename,index):
-    image_name = "../../homework3/project3/"+imagename+".bmp"
-    result_name = "../../homework3/local_result_"+imagename+".bmp"
-    result_hist = "../../homework3/local_result_"+imagename+"_hist.png"
+    image_name = "../../images/project3/"+imagename+".bmp"
+    result_name = "../../images/local_result_"+imagename+".bmp"
+    result_hist = "../../images/local_result_"+imagename+"_hist.png"
     tool = basic_cv_tool(image_name)
     img = tool.ImageRead(image_name)
     plt.figure()
@@ -93,17 +93,17 @@ def local_histogram(imagename,index):
     
 
 def calcdf(imagename):
-    img_name = "../../homework3/project3/"+imagename+".bmp"
+    img_name = "../../images/project3/"+imagename+".bmp"
     tool = basic_cv_tool(img_name)
     img = tool.ImageRead(img_name)
     cdf = tool.calcdf(img)
     return cdf
 
 def hist_segmentation(imagename):
-    image_name = "../../homework3/project3/"+imagename+".bmp"
-    result_name1 = "../../homework3/seg_result1_"+imagename+".bmp"
-    result_name2 = "../../homework3/seg_result2_"+imagename+".bmp"
-    result_hist = "../../homework3/seg_result_"+imagename+"_hist.png"
+    image_name = "../../images/project3/"+imagename+".bmp"
+    result_name1 = "../../images/seg_result1_"+imagename+".bmp"
+    result_name2 = "../../images/seg_result2_"+imagename+".bmp"
+    result_hist = "../../images/seg_result_"+imagename+"_hist.png"
     tool = basic_cv_tool(image_name)
     img = tool.ImageRead(image_name)
     img1, img2 = tool.segmentation(img)

@@ -1,0 +1,7 @@
+*.*
+!*.py
+!*.md
+!*.bmp
+!*.png
+!*.gitignore
+!*.BMP

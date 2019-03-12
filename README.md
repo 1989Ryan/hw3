@@ -19,3 +19,12 @@ README.md
 code.txt
 ```
 
+## Prerequisite
+
+opencv-python
+
+numpy
+
+## Run
+
+Please run the command `python histogram.py` in the folder `CV_python_toolbox/scripts/`. The images will be saved in the folder `images` automatically.
